@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giới Thiệu Bản Thân | Lâm Minh Uyên - Portfolio Ngôn Ngữ Trung LHU</title>
+  <link rel="icon" type="image/png" href="./hinh_anh_ggsite/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Quicksand:wght@500;600;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+/* ==========================================================================
+   PORTFOLIO LÂM MINH UYÊN - CHUẨN GOOGLE SITES 100%
+   Màu sắc: Xanh lá nhạt pastel mát mắt (#EAF2EC, #52795D) & Hồng hoa đào (#FDF1F5, #CE6582)
+   Phong cách: Tinh tế, đơn giản, hiện đại, giàu hình ảnh, chuẩn giao diện web
+   ========================================================================== */
+
+:root {
+  --primary-color: #52795D;       /* Xanh xô thơm (Màu chủ đạo Google Sites) */
+  --primary-dark: #385540;
+  --accent-green: #EAF2EC;        /* Nền Kiểu 2: Xanh nhạt mát mắt */
+  --border-green: #D3E5D8;
+
+  --accent-pink: #FDF1F5;         /* Nền Kiểu 3: Hồng phấn nhẹ nhàng */
+  --border-pink: #F8D5E1;
+  --pink-text: #CE6582;
+  --pink-dark: #A84560;
+
+  --bg-page: #FFFFFF;             /* Nền Kiểu 1: Trắng tiêu chuẩn */
+  --text-title: #1E2D22;
+  --text-body: #3B4A3F;
+  --text-muted: #647568;
+
+  --radius-card: 10px;
+  --radius-btn: 999px;
+  --shadow-soft: 0 4px 16px rgba(40, 65, 47, 0.06);
+  --shadow-hover: 0 8px 24px rgba(40, 65, 47, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', 'Roboto', sans-serif;
+  color: var(--text-body);
+  background-color: var(--bg-page);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
+   1. THANH ĐIỀU HƯỚNG TRÊN CÙNG (GOOGLE SITES TOP NAVIGATION)
+   ========================================================================== */
+.site-header {
+  background: #FFFFFF;
+  border-bottom: 1px solid #E6EFE8;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.header-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brand-logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid var(--border-green);
+}
+
+.brand-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-title);
+  letter-spacing: -0.2px;
+}
+
+.brand-tagline {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  list-style: none;
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #4C5E51;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: var(--radius-btn);
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-link:hover {
+  background: var(--accent-green);
+  color: var(--primary-dark);
+}
+
+.nav-link.active {
+  background: var(--accent-pink);
+  color: var(--pink-dark);
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   2. BIỂU NGỮ ĐẦU TRANG (GOOGLE SITES BANNER)
+   ========================================================================== */
+.hero-banner {
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)),
+              url('./hinh_anh_ggsite/banner_trungquoc_cophong_1.jpg') center/cover no-repeat;
+  padding: 68px 24px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-green);
+}
+
+.banner-subpage {
+  padding: 44px 24px;
+}
+
+.banner-tag {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-color);
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--border-green);
+  padding: 4px 16px;
+  border-radius: var(--radius-btn);
+  display: inline-block;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.banner-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+  color: var(--text-title);
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.banner-title span {
+  color: var(--pink-text);
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+.banner-desc {
+  font-size: 15.5px;
+  color: #384C3E;
+  max-width: 680px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   3. PHÂN ĐOẠN NỘI DUNG (SECTIONS - CHUẨN MÀU NỀN GOOGLE SITES)
+   ========================================================================== */
+.site-section {
+  padding: 50px 24px;
+  position: relative;
+}
+
+.container-1100 {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-white {
+  background-color: #FFFFFF;
+}
+
+.section-green {
+  background-color: var(--accent-green);
+  border-top: 1px solid var(--border-green);
+  border-bottom: 1px solid var(--border-green);
+}
+
+.section-pink {
+  background-color: var(--accent-pink);
+  border-top: 1px solid var(--border-pink);
+  border-bottom: 1px solid var(--border-pink);
+}
+
+.section-header-center {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.section-pre-title {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--pink-text);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.section-h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--text-title);
+  margin-bottom: 6px;
+}
+
+.section-p-lead {
+  font-size: 14px;
+  color: var(--text-muted);
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   4. 3 NÚT LIÊN KẾT SUB-BANNER (MONG MUỐN SỐ 1 CỦA UYÊN)
+   ========================================================================== */
+.subbanner-3cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.subbanner-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-green);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  text-decoration: none;
+  color: var(--text-body);
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.subbanner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--primary-color);
+}
+
+.subbanner-card.pink-highlight:hover {
+  border-color: var(--pink-text);
+}
+
+.subbanner-thumb {
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+  background: #E8EFEA;
+}
+
+.subbanner-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.subbanner-card:hover .subbanner-thumb img {
+  transform: scale(1.06);
+}
+
+.subbanner-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--primary-dark);
+  padding: 3px 10px;
+  border-radius: var(--radius-btn);
+  border: 1px solid var(--border-green);
+}
+
+.subbanner-card.pink-highlight .subbanner-badge {
+  color: var(--pink-dark);
+  border-color: var(--border-pink);
+}
+
+.subbanner-body {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.subbanner-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-title);
+  margin-bottom: 6px;
+}
+
+.subbanner-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.subbanner-btn {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.subbanner-card.pink-highlight .subbanner-btn {
+  color: var(--pink-text);
+}
+
+/* ==========================================================================
+   5. CÁC KHỐI GIAO DIỆN CHUẨN GOOGLE SITES (CONTENT BLOCKS)
+   ========================================================================== */
+/* Khối 2 cột: Ảnh bên trái + Text bên phải (Google Sites Block 1) */
+.block-split-2col {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.card-avatar-box {
+  background: #FFFFFF;
+  border: 1px solid var(--border-green);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+}
+
+.card-avatar-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  background: #E8EFEA;
+}
+
+.card-avatar-caption {
+  padding: 16px;
+}
+
+.card-avatar-caption h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-title);
+}
+
+.card-avatar-caption .hanzi-tag {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 13.5px;
+  color: var(--pink-text);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+/* Bảng thông tin cá nhân */
+.info-pills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.info-pill {
+  background: #FFFFFF;
+  border: 1px solid #E1EDE4;
+  border-left: 4px solid var(--primary-color);
+  border-radius: 6px;
+  padding: 10px 14px;
+}
+
+.info-pill.pink-border {
+  border-left-color: var(--pink-text);
+}
+
+.info-pill .label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.info-pill .val {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--text-title);
+}
+
+/* Hộp trích dẫn Mục tiêu nghề nghiệp */
+.quote-career-box {
+  background: #FFFFFF;
+  border: 1px solid var(--border-green);
+  border-radius: var(--radius-card);
+  padding: 22px 24px;
+  box-shadow: var(--shadow-soft);
+}
+
+.quote-career-box .title {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--pink-text);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.quote-career-box .content {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-title);
+  font-style: italic;
+}
+
+/* Khối 4 cột (Content Block 4 items của Google Sites) */
+.block-4col-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card-4col-item {
+  background: #FFFFFF;
+  border: 1px solid var(--border-green);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-4col-thumb {
+  height: 160px;
+  overflow: hidden;
+  background: #E8EFEA;
+}
+
+.card-4col-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-4col-body {
+  padding: 16px;
+  flex: 1;
+}
+
+.card-4col-tag {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--pink-text);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.card-4col-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-title);
+  margin-bottom: 8px;
+}
+
+.card-4col-text {
+  font-size: 12.8px;
+  color: var(--text-body);
+  line-height: 1.55;
+}
+
+/* Khối 5 cột sở thích (Lifestyle grid) */
+.block-5col-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.card-5col-item {
+  background: #FFFFFF;
+  border: 1px solid var(--border-pink);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+}
+
+.card-5col-thumb {
+  height: 130px;
+  overflow: hidden;
+  background: #FDF1F5;
+}
+
+.card-5col-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-5col-caption {
+  padding: 12px;
+}
+
+.card-5col-caption h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-title);
+  margin-bottom: 4px;
+}
+
+.card-5col-caption p {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+/* ==========================================================================
+   6. KHỐI KINH NGHIỆM THỰC TẾ & DU HỌC HÈ
+   ========================================================================== */
+.flagship-duhoc-card {
+  background: #FFFFFF;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--radius-card);
+  padding: 28px;
+  box-shadow: var(--shadow-soft);
+  margin-bottom: 30px;
+}
+
+.flagship-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.flagship-title-group h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  color: var(--text-title);
+}
+
+.flagship-title-group .sub-agency {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.flagship-tag-pill {
+  background: var(--accent-pink);
+  color: var(--pink-dark);
+  border: 1px solid var(--border-pink);
+  font-size: 11.5px;
+  font-weight: 800;
+  padding: 5px 14px;
+  border-radius: var(--radius-btn);
+}
+
+/* Lưới 4 ảnh du học */
+.duhoc-photos-4grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.duhoc-photo-box {
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.duhoc-photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.duhoc-photo-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(17, 26, 19, 0.8);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 8px;
+  text-align: center;
+}
+
+.duhoc-bullets-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.duhoc-bullets-list li {
+  font-size: 13.5px;
+  color: var(--text-body);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background: var(--accent-green);
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border-green);
+}
+
+.duhoc-bullets-list li i {
+  color: var(--primary-color);
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+/* Khối kinh nghiệm ngang (1 ảnh trái + text phải) */
+.exp-row-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-green);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  margin-bottom: 20px;
+}
+
+.exp-row-media {
+  min-height: 160px;
+  overflow: hidden;
+  background: #E8EFEA;
+}
+
+.exp-row-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.exp-row-text {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.exp-row-text h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-title);
+  margin-bottom: 4px;
+}
+
+.exp-row-text .agency {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.exp-row-text p {
+  font-size: 13.5px;
+  color: var(--text-body);
+  line-height: 1.55;
+  margin-bottom: 4px;
+}
+
+/* ==========================================================================
+   7. KHỐI CHỨNG CHỈ (CONTENT BLOCK 3 ITEMS)
+   ========================================================================== */
+.block-3col-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card-3col-item {
+  background: #FFFFFF;
+  border: 1px solid var(--border-green);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.card-3col-thumb {
+  height: 180px;
+  overflow: hidden;
+  background: #E8EFEA;
+}
+
+.card-3col-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-3col-body {
+  padding: 18px 20px;
+}
+
+.card-3col-tag {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--pink-text);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.card-3col-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  color: var(--text-title);
+  margin-bottom: 8px;
+}
+
+.card-3col-text {
+  font-size: 13.2px;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+/* ==========================================================================
+   8. CHÂN TRANG LIÊN HỆ & MẠNG XÃ HỘI (GOOGLE SITES FOOTER)
+   ========================================================================== */
+.site-footer {
+  background: #F1F6F2;
+  border-top: 1px solid #D6E4DA;
+  padding: 40px 24px 24px 24px;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 36px;
+  align-items: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #D8E5DC;
+}
+
+.footer-pitch h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--text-title);
+  margin-bottom: 8px;
+}
+
+.footer-pitch p {
+  font-size: 14px;
+  color: var(--text-body);
+  line-height: 1.6;
+}
+
+.footer-contact-box {
+  background: #FFFFFF;
+  border: 1px solid var(--border-green);
+  border-radius: var(--radius-card);
+  padding: 20px 24px;
+}
+
+.contact-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  font-size: 13.5px;
+  border-bottom: 1px dashed #E5ECE7;
+}
+
+.contact-line:last-child {
+  border-bottom: none;
+}
+
+.contact-line i {
+  color: var(--primary-color);
+  width: 16px;
+}
+
+.footer-social-strip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px dashed #E5ECE7;
+}
+
+.social-icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.social-icon-btn img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.social-icon-btn:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom-copy {
+  text-align: center;
+  font-size: 12.5px;
+  color: var(--text-muted);
+  padding-top: 20px;
+}
+
+/* ==========================================================================
+   9. HUY HIỆU CHỈ DẪN GOOGLE SITES (GÓC DƯỚI PHẢI - CÓ THỂ BẬT/TẮT)
+   ========================================================================== */
+.ggsite-guide-badge {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #18231C;
+  color: #A7F3D0;
+  border: 1px solid #385540;
+  border-radius: var(--radius-btn);
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+  z-index: 9999;
+  transition: all 0.2s;
+}
+
+.ggsite-guide-badge:hover {
+  background: #24352A;
+  transform: translateY(-2px);
+}
+
+.guide-tag-overlay {
+  display: none;
+  background: #111A13;
+  color: #86EFAC;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  width: fit-content;
+}
+
+body.show-guide .guide-tag-overlay {
+  display: inline-block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 860px) {
+  .subbanner-3cards { grid-template-columns: 1fr; }
+  .block-split-2col { grid-template-columns: 1fr; }
+  .block-4col-grid { grid-template-columns: repeat(2, 1fr); }
+  .block-5col-grid { grid-template-columns: repeat(2, 1fr); }
+  .duhoc-photos-4grid { grid-template-columns: repeat(2, 1fr); }
+  .duhoc-bullets-list { grid-template-columns: 1fr; }
+  .exp-row-card { grid-template-columns: 1fr; }
+  .block-3col-grid { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr; }
+  .header-inner { height: auto; padding: 12px 18px; flex-direction: column; gap: 10px; }
+  .site-nav { flex-wrap: wrap; justify-content: center; }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- ==================== 1. THANH MENU GOOGLE SITES ==================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="trang-chu.html" class="brand-link">
+        <img src="./hinh_anh_ggsite/02_avatar_chan_dung_uyen.jpg" alt="Lâm Minh Uyên" class="brand-logo-img">
+        <div class="brand-info">
+          <span class="brand-name">lamminhuyen</span>
+          <span class="brand-tagline">Ngôn Ngữ Trung • ĐH Lạc Hồng</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="site-nav">
+          <li><a href="trang-chu.html" class="nav-link"><i data-lucide="home" size="14"></i> Trang chủ</a></li>
+          <li><a href="gioi-thieu.html" class="nav-link active"><i data-lucide="user" size="14"></i> Giới thiệu</a></li>
+          <li><a href="kinh-nghiem.html" class="nav-link"><i data-lucide="plane" size="14"></i> Kinh nghiệm</a></li>
+          <li><a href="portfolio.html" class="nav-link"><i data-lucide="award" size="14"></i> Portfolio</a></li>
+          <li><a href="lien-he.html" class="nav-link"><i data-lucide="mail" size="14"></i> Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== 2. BIỂU NGỮ TRANG CON (SUBPAGE BANNER) ==================== -->
+  <section class="hero-banner banner-subpage">
+    <span class="guide-tag-overlay">Google Sites: [Loại biểu ngữ: Biểu ngữ] • Tiêu đề trang: Giới thiệu bản thân</span>
+    <div class="banner-tag">🌸 个人简介 • ABOUT ME</div>
+    <h1 class="banner-title">GIỚI THIỆU BẢN THÂN <span>自我介绍</span></h1>
+    <p class="banner-desc">
+      Hồ sơ sinh viên, thông tin liên lạc và mục tiêu nghề nghiệp của Lâm Minh Uyên.
+    </p>
+  </section>
+
+  <!-- ==================== 3. KHỐI THÔNG TIN CÁ NHÂN & MỤC TIÊU (2 CỘT) ==================== -->
+  <section class="site-section section-white">
+    <div class="container-1100">
+      <span class="guide-tag-overlay">Google Sites: [Khối nội dung 2 cột - 1 ảnh + text] • Nền Kiểu 1 (Trắng)</span>
+
+      <div class="block-split-2col">
+        <!-- Cột trái: Ảnh chân dung lớn -->
+        <div class="card-avatar-box">
+          <img src="./hinh_anh_ggsite/02_avatar_chan_dung_uyen.jpg" alt="Lâm Minh Uyên" class="card-avatar-img">
+          <div class="card-avatar-caption">
+            <h3>Lâm Minh Uyên</h3>
+            <div class="hanzi-tag">林明渊 • 2005</div>
+            <span style="font-size: 11.5px; font-weight: 700; color: var(--primary-color); background: var(--accent-green); padding: 4px 12px; border-radius: 999px; border: 1px solid var(--border-green);">
+              Sinh viên năm 4 – LHU
+            </span>
+          </div>
+        </div>
+
+        <!-- Cột phải: Bảng thông tin cá nhân + Trích dẫn mục tiêu -->
+        <div>
+          <div class="info-pills-grid">
+            <div class="info-pill">
+              <div class="label">Họ và tên:</div>
+              <div class="val">Lâm Minh Uyên</div>
+            </div>
+            <div class="info-pill pink-border">
+              <div class="label">Ngày sinh:</div>
+              <div class="val">27/01/2005 (21 tuổi)</div>
+            </div>
+            <div class="info-pill">
+              <div class="label">Số điện thoại / Zalo:</div>
+              <div class="val">0394950167</div>
+            </div>
+            <div class="info-pill pink-border">
+              <div class="label">Hộp thư điện tử (Email):</div>
+              <div class="val" style="font-size: 13px;">Minhuyenlam2701@gmail.com</div>
+            </div>
+            <div class="info-pill" style="grid-column: span 2;">
+              <div class="label">Trình độ học vấn & Chuyên ngành:</div>
+              <div class="val">Sinh viên năm 4 – Ngôn ngữ Trung – Trường Đại học Lạc Hồng (LHU)</div>
+            </div>
+            <div class="info-pill pink-border" style="grid-column: span 2;">
+              <div class="label">Địa chỉ hiện tại:</div>
+              <div class="val">Khánh Bình, Tân Hiệp, TP. Hồ Chí Minh</div>
+            </div>
+          </div>
+
+          <!-- HỘP MỤC TIÊU NGHỀ NGHIỆP NGUYÊN VĂN TỪ KHÁCH -->
+          <div class="quote-career-box">
+            <div class="title">
+              <i data-lucide="target" size="16"></i> MỤC TIÊU NGHỀ NGHIỆP (CAREER OBJECTIVE)
+            </div>
+            <p class="content">
+              "Mong muốn được làm việc trong môi trường chuyên nghiệp, có cơ hội vận dụng kiến thức tiếng Trung đã học vào thực tế. Không ngừng trau dồi khả năng giao tiếp, biên phiên dịch và kỹ năng chuyên môn. Đồng thời tích lũy kinh nghiệm làm việc, nâng cao năng lực bản thân và đóng góp tích cực cho sự phát triển của công ty."
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 4. PHÂN ĐOẠN 5 SỞ THÍCH CÁ NHÂN (LIFESTYLE GRID) ==================== -->
+  <section class="site-section section-pink">
+    <div class="container-1100">
+      <span class="guide-tag-overlay">Google Sites: [Khối nội dung có hình ảnh] • Nền Kiểu 3 (Hồng phấn nhẹ)</span>
+
+      <div class="section-header-center">
+        <span class="section-pre-title">ĐỜI SỐNG & SỞ THÍCH</span>
+        <h2 class="section-h2">SỞ THÍCH CÁ NHÂN (兴趣爱好)</h2>
+        <p class="section-p-lead">5 điểm chạm nuôi dưỡng đam mê ngôn ngữ và phong cách sống tích cực.</p>
+      </div>
+
+      <div class="block-5col-grid">
+        <!-- Sở thích 1 -->
+        <div class="card-5col-item">
+          <div class="card-5col-thumb">
+            <img src="./hinh_anh_ggsite/hobby_1_cocung_dienmao.jpg" alt="Văn hóa lịch sử Cố Cung">
+          </div>
+          <div class="card-5col-caption">
+            <h4>Văn Hóa Lịch Sử</h4>
+            <p>Tìm hiểu văn hóa, lịch sử và con người Trung Quốc.</p>
+          </div>
+        </div>
+
+        <!-- Sở thích 2 -->
+        <div class="card-5col-item">
+          <div class="card-5col-thumb">
+            <img src="./hinh_anh_ggsite/hobby_2_sotay_ngonngu.jpg" alt="Học ngôn ngữ mới">
+          </div>
+          <div class="card-5col-caption">
+            <h4>Học Ngôn Ngữ</h4>
+            <p>Học hỏi và khám phá những ngôn ngữ mới.</p>
+          </div>
+        </div>
+
+        <!-- Sở thích 3 -->
+        <div class="card-5col-item">
+          <div class="card-5col-thumb">
+            <img src="./hinh_anh_ggsite/hobby_3_docsach_amnhac.jpg" alt="Đọc sách âm nhạc">
+          </div>
+          <div class="card-5col-caption">
+            <h4>Sách & Âm Nhạc</h4>
+            <p>Đọc sách, xem phim và thưởng thức âm nhạc.</p>
+          </div>
+        </div>
+
+        <!-- Sở thích 4 -->
+        <div class="card-5col-item">
+          <div class="card-5col-thumb">
+            <img src="./hinh_anh_ggsite/hobby_4_cotran_giangnam.jpg" alt="Du lịch trải nghiệm">
+          </div>
+          <div class="card-5col-caption">
+            <h4>Du Lịch</h4>
+            <p>Trải nghiệm những vùng đất và nền văn hóa khác nhau.</p>
+          </div>
+        </div>
+
+        <!-- Sở thích 5 -->
+        <div class="card-5col-item">
+          <div class="card-5col-thumb">
+            <img src="./hinh_anh_ggsite/hobby_5_ketnoi_banbe.jpg" alt="Giao lưu kết nối">
+          </div>
+          <div class="card-5col-caption">
+            <h4>Kết Nối</h4>
+            <p>Giao lưu, kết nối và học hỏi từ mọi người.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 5. CHÂN TRANG ==================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-pitch">
+        <h3>Lâm Minh Uyên • Ngôn Ngữ Trung LHU 🌿</h3>
+        <p>
+          Sinh viên năm 4 chuyên ngành Ngôn ngữ Trung Quốc – Trường Đại học Lạc Hồng. Luôn sẵn sàng đón nhận cơ hội việc làm & thực tập đối ngoại.
+        </p>
+      </div>
+
+      <div class="footer-contact-box">
+        <div class="contact-line">
+          <i data-lucide="mail"></i>
+          <span><strong>Email:</strong> Minhuyenlam2701@gmail.com</span>
+        </div>
+        <div class="contact-line">
+          <i data-lucide="phone"></i>
+          <span><strong>SĐT / Zalo:</strong> 0394950167</span>
+        </div>
+        <div class="contact-line">
+          <i data-lucide="map-pin"></i>
+          <span><strong>Địa chỉ:</strong> Khánh Bình, Tân Hiệp, TP.HCM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-copy">
+      Thiết kế chuẩn Google Sites 100% • Lâm Minh Uyên • Ngôn Ngữ Trung LHU (2026)
+    </div>
+  </footer>
+
+  <button class="ggsite-guide-badge" onclick="document.body.classList.toggle('show-guide')">
+    <i data-lucide="layers" size="14"></i> <span>Bật/Tắt Nhãn Google Sites</span>
+  </button>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
