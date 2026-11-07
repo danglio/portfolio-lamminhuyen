@@ -350,6 +350,7 @@ body {
 /* ==========================================================================
    5. CÁC KHỐI GIAO DIỆN CHUẨN GOOGLE SITES (CONTENT BLOCKS)
    ========================================================================== */
+/* Khối 2 cột: Ảnh bên trái + Text bên phải (Google Sites Block 1) */
 .block-split-2col {
   display: grid;
   grid-template-columns: 320px 1fr;
@@ -392,6 +393,7 @@ body {
   margin-bottom: 6px;
 }
 
+/* Bảng thông tin cá nhân */
 .info-pills-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -424,6 +426,7 @@ body {
   color: var(--text-title);
 }
 
+/* Hộp trích dẫn Mục tiêu nghề nghiệp */
 .quote-career-box {
   background: #FFFFFF;
   border: 1px solid var(--border-green);
@@ -451,6 +454,7 @@ body {
   font-style: italic;
 }
 
+/* Khối 4 cột (Content Block 4 items của Google Sites) */
 .block-4col-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -506,6 +510,7 @@ body {
   line-height: 1.55;
 }
 
+/* Khối 5 cột sở thích (Lifestyle grid) */
 .block-5col-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -598,6 +603,7 @@ body {
   border-radius: var(--radius-btn);
 }
 
+/* Lưới 4 ảnh du học */
 .duhoc-photos-4grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -657,6 +663,7 @@ body {
   flex-shrink: 0;
 }
 
+/* Khối kinh nghiệm ngang (1 ảnh trái + text phải) */
 .exp-row-card {
   background: #FFFFFF;
   border: 1px solid var(--border-green);

@@ -10,100 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Quicksand:wght@500;600;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    .contact-hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-    }
-    .contact-card-box {
-      background: #FFFFFF;
-      border: 1px solid var(--border-green);
-      border-radius: var(--radius-card);
-      padding: 30px;
-      box-shadow: var(--shadow-soft);
-    }
-    .contact-card-box h3 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--text-title);
-      margin-bottom: 12px;
-    }
-    .contact-big-line {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      padding: 14px;
-      margin-bottom: 12px;
-      border-radius: 8px;
-      background: var(--accent-green);
-      border: 1px solid var(--border-green);
-    }
-    .contact-big-line i {
-      color: var(--primary-color);
-      width: 24px;
-      height: 24px;
-      flex-shrink: 0;
-    }
-    .contact-big-line .title {
-      font-size: 11.5px;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: var(--text-muted);
-    }
-    .contact-big-line .val {
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--text-title);
-    }
-    .social-showcase-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-top: 20px;
-    }
-    .social-showcase-item {
-      background: #FFFFFF;
-      border: 1px solid var(--border-pink);
-      border-radius: 10px;
-      padding: 16px 12px;
-      text-align: center;
-      transition: all 0.2s;
-      text-decoration: none;
-      color: inherit;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-    }
-    .social-showcase-item:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
-      border-color: var(--pink-text);
-    }
-    .social-showcase-item img {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-    }
-    .social-showcase-item span {
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--text-title);
-    }
-    @media (max-width: 860px) {
-      .contact-hero-grid { grid-template-columns: 1fr; }
-      .social-showcase-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-  </style>
 </head>
 <body>
 
   <!-- ==================== 1. THANH MENU GOOGLE SITES ==================== -->
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="brand-link">
+      <a href="trang-chu.html" class="brand-link">
         <img src="./hinh_anh_ggsite/02_avatar_chan_dung_uyen.jpg" alt="Lâm Minh Uyên" class="brand-logo-img">
         <div class="brand-info">
           <span class="brand-name">lamminhuyen</span>
@@ -113,7 +26,7 @@
 
       <nav>
         <ul class="site-nav">
-          <li><a href="index.html" class="nav-link"><i data-lucide="home" size="14"></i> Trang chủ</a></li>
+          <li><a href="trang-chu.html" class="nav-link"><i data-lucide="home" size="14"></i> Trang chủ</a></li>
           <li><a href="gioi-thieu.html" class="nav-link"><i data-lucide="user" size="14"></i> Giới thiệu</a></li>
           <li><a href="kinh-nghiem.html" class="nav-link"><i data-lucide="plane" size="14"></i> Kinh nghiệm</a></li>
           <li><a href="portfolio.html" class="nav-link"><i data-lucide="award" size="14"></i> Portfolio</a></li>
@@ -123,188 +36,117 @@
     </div>
   </header>
 
-  <!-- ==================== 2. BIỂU NGỮ TRANG LIÊN HỆ ==================== -->
-  <section class="hero-banner">
-    <span class="guide-tag-overlay">Google Sites: [Loại biểu ngữ: Biểu ngữ] • Tiêu đề: Liên Hệ & Kết Nối</span>
-    <div class="banner-tag">💌 保持联系 • HỒ SƠ NĂNG LỰC CÁ NHÂN</div>
-    <h1 class="banner-title">LIÊN HỆ & KẾT NỐI <span>保持联系</span></h1>
+  <!-- ==================== 2. BIỂU NGỮ TRANG CON (SUBPAGE BANNER) ==================== -->
+  <section class="hero-banner banner-subpage">
+    <span class="guide-tag-overlay">Google Sites: [Loại biểu ngữ: Biểu ngữ] • Tiêu đề trang: Liên hệ</span>
+    <div class="banner-tag">✉️ 联系方式 • CONTACT</div>
+    <h1 class="banner-title">THÔNG TIN LIÊN HỆ <span>保持联系</span></h1>
     <p class="banner-desc">
-      Sẵn sàng đón nhận cơ hội nghề nghiệp, thực tập và hợp tác dịch thuật tiếng Trung cùng Quý công ty.
+      Kết nối hợp tác, trao đổi công việc và cơ hội thực tập cùng Lâm Minh Uyên.
     </p>
   </section>
 
-  <!-- ==================== 3. THÔNG TIN LIÊN HỆ & MẠNG XÃ HỘI TRỌNG TÂM ==================== -->
+  <!-- ==================== 3. KHỐI LIÊN HỆ (2 CỘT CHUẨN GOOGLE SITES) ==================== -->
   <section class="site-section section-white">
     <div class="container-1100">
-      <span class="guide-tag-overlay">Google Sites: [Khối nội dung 2 cột: Danh sách thông tin + Bộ nút icon mạng xã hội]</span>
+      <span class="guide-tag-overlay">Google Sites: [Khối nội dung 2 cột] • Nền Kiểu 1 (Trắng)</span>
 
-      <div class="contact-hero-grid">
-        <!-- CỘT 1: THÔNG TIN TRỰC TIẾP -->
-        <div class="contact-card-box">
-          <h3>Thông Tin Liên Hệ Nhanh</h3>
-          <p style="font-size: 13.5px; color: var(--text-muted); margin-bottom: 20px;">
-            Quý Nhà tuyển dụng và Quý Đối tác có thể liên hệ trực tiếp với em qua các kênh sau:
+      <div class="block-split-2col" style="grid-template-columns: 1fr 1fr; align-items: center;">
+        <!-- Cột trái: Lời chào đối ngoại -->
+        <div>
+          <span class="section-pre-title">KẾT NỐI & HỢP TÁC</span>
+          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 26px; font-weight: 800; color: var(--text-title); margin-bottom: 14px;">
+            Sẵn Sàng Cho Những Cơ Hội Nghề Nghiệp Mới! 🌿
+          </h2>
+          <p style="font-size: 14.5px; color: var(--text-body); line-height: 1.7; margin-bottom: 20px;">
+            Chân thành cảm ơn Quý Thầy/Cô và Nhà tuyển dụng đã dành thời gian xem qua hồ sơ năng lực cá nhân của em. Với nền tảng tiếng Trung vững chắc và tinh thần cầu tiến, em luôn sẵn sàng cống hiến năng lực trong lĩnh vực Biên phiên dịch, Trợ lý & Đối ngoại.
           </p>
-
-          <div class="contact-big-line">
-            <i data-lucide="phone"></i>
-            <div>
-              <div class="title">Điện thoại / Hotline</div>
-              <div class="val">0394950167</div>
-            </div>
+          <div style="font-size: 13.5px; font-weight: 700; color: var(--primary-color);">
+            🌸 Lâm Minh Uyên • Ngôn Ngữ Trung – Trường ĐH Lạc Hồng (LHU)
           </div>
+        </div>
 
-          <div class="contact-big-line">
-            <i data-lucide="message-square"></i>
-            <div>
-              <div class="title">Zalo cá nhân</div>
-              <div class="val">0394950167 (Lâm Minh Uyên)</div>
-            </div>
-          </div>
+        <!-- Cột phải: Hộp liên hệ và icon mạng xã hội -->
+        <div style="background: var(--accent-green); border: 1px solid var(--border-green); border-radius: var(--radius-card); padding: 30px;">
+          <h3 style="font-family: 'Montserrat', sans-serif; font-size: 17px; font-weight: 700; color: var(--text-title); margin-bottom: 12px;">
+            Kênh liên hệ trực tiếp:
+          </h3>
 
-          <div class="contact-big-line">
+          <div class="contact-line">
             <i data-lucide="mail"></i>
-            <div>
-              <div class="title">Email chính thức</div>
-              <div class="val">Minhuyenlam2701@gmail.com</div>
-            </div>
+            <span><strong>Email:</strong> Minhuyenlam2701@gmail.com</span>
           </div>
 
-          <div class="contact-big-line">
+          <div class="contact-line">
+            <i data-lucide="phone"></i>
+            <span><strong>Điện thoại:</strong> 0394950167</span>
+          </div>
+
+          <div class="contact-line">
+            <i data-lucide="message-square"></i>
+            <span><strong>Zalo:</strong> 0394950167</span>
+          </div>
+
+          <div class="contact-line">
             <i data-lucide="map-pin"></i>
-            <div>
-              <div class="title">Địa chỉ thường trú</div>
-              <div class="val">Khánh Bình, Tân Hiệp, TP.HCM</div>
+            <span><strong>Địa chỉ:</strong> Khánh Bình, Tân Hiệp, TP. Hồ Chí Minh</span>
+          </div>
+
+          <!-- Mạng xã hội Google Sites -->
+          <div style="margin-top: 18px; padding-top: 14px; border-top: 1px dashed rgba(82, 121, 93, 0.2);">
+            <div style="font-size: 11.5px; font-weight: 700; color: var(--primary-color); text-transform: uppercase; margin-bottom: 10px; letter-spacing: 0.5px;">
+              Mạng xã hội (Social Links):
+            </div>
+            <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+              <a href="https://zalo.me/0394950167" target="_blank" title="Zalo" class="social-icon-btn">
+                <img src="./hinh_anh_ggsite/mxh_dong_bo_pastel/01_zalo_sage.png" alt="Zalo">
+              </a>
+              <a href="https://facebook.com" target="_blank" title="Facebook" class="social-icon-btn">
+                <img src="./hinh_anh_ggsite/mxh_dong_bo_pastel/02_facebook_sage.png" alt="Facebook">
+              </a>
+              <a href="https://tiktok.com" target="_blank" title="TikTok" class="social-icon-btn">
+                <img src="./hinh_anh_ggsite/mxh_dong_bo_pastel/03_tiktok_sage.png" alt="TikTok">
+              </a>
+              <a href="https://instagram.com" target="_blank" title="Instagram" class="social-icon-btn">
+                <img src="./hinh_anh_ggsite/mxh_dong_bo_pastel/04_instagram_sage.png" alt="Instagram">
+              </a>
+              <a href="mailto:Minhuyenlam2701@gmail.com" title="Gmail" class="social-icon-btn">
+                <img src="./hinh_anh_ggsite/mxh_dong_bo_pastel/05_gmail_sage.png" alt="Gmail">
+              </a>
+              <a href="javascript:void(0)" title="WeChat: lamminhuyen" class="social-icon-btn">
+                <img src="./hinh_anh_ggsite/mxh_dong_bo_pastel/06_wechat_sage.png" alt="WeChat">
+              </a>
             </div>
           </div>
 
-          <div class="contact-big-line" style="background: #FDF1F5; border-color: var(--border-pink);">
-            <i data-lucide="graduation-cap" style="color: var(--pink-text);"></i>
-            <div>
-              <div class="title">Học vấn</div>
-              <div class="val">Đại học Lạc Hồng (LHU) – Năm 4</div>
-            </div>
-          </div>
         </div>
-
-        <!-- CỘT 2: CÁC NỀN TẢNG MẠNG XÃ HỘI ĐỒNG BỘ PASTEL -->
-        <div class="contact-card-box" style="background: #FAFDFB;">
-          <h3>Mạng Xã Hội & Kết Nối Trực Tuyến</h3>
-          <p style="font-size: 13.5px; color: var(--text-muted); margin-bottom: 14px;">
-            Bộ nhận diện mạng xã hội đồng bộ tông màu Xanh Xô Thơm (Sage Green) nhẹ nhàng, tinh tế:
-          </p>
-
-          <div class="social-showcase-grid">
-            <!-- ZALO -->
-            <a href="https://zalo.me/0394950167" target="_blank" class="social-showcase-item">
-              <img src="./hinh_anh_ggsite/mxh_dong_bo_pastel/01_zalo_sage.png" alt="Zalo">
-              <span>Zalo</span>
-            </a>
-
-            <!-- FACEBOOK -->
-            <a href="https://facebook.com" target="_blank" class="social-showcase-item">
-              <img src="./hinh_anh_ggsite/mxh_dong_bo_pastel/02_facebook_sage.png" alt="Facebook">
-              <span>Facebook</span>
-            </a>
-
-            <!-- TIKTOK -->
-            <a href="https://tiktok.com" target="_blank" class="social-showcase-item">
-              <img src="./hinh_anh_ggsite/mxh_dong_bo_pastel/03_tiktok_sage.png" alt="TikTok">
-              <span>TikTok</span>
-            </a>
-
-            <!-- INSTAGRAM -->
-            <a href="https://instagram.com" target="_blank" class="social-showcase-item">
-              <img src="./hinh_anh_ggsite/mxh_dong_bo_pastel/04_instagram_sage.png" alt="Instagram">
-              <span>Instagram</span>
-            </a>
-
-            <!-- GMAIL -->
-            <a href="mailto:Minhuyenlam2701@gmail.com" class="social-showcase-item">
-              <img src="./hinh_anh_ggsite/mxh_dong_bo_pastel/05_gmail_sage.png" alt="Gmail">
-              <span>Gmail</span>
-            </a>
-
-            <!-- WECHAT -->
-            <a href="javascript:alert('WeChat ID: lamminhuyen')" class="social-showcase-item">
-              <img src="./hinh_anh_ggsite/mxh_dong_bo_pastel/06_wechat_sage.png" alt="WeChat">
-              <span>WeChat</span>
-            </a>
-          </div>
-
-          <div style="margin-top: 24px; padding: 14px; background: #FFFFFF; border-radius: 8px; border: 1px dashed var(--border-green); text-align: center;">
-            <p style="font-size: 13px; color: var(--text-title); font-weight: 600;">
-              ✨ "Thái độ quyết định tầm cao, sự chăm chỉ mở ra tương lai."
-            </p>
-            <p style="font-size: 12px; color: var(--primary-color); font-weight: 700; font-family: 'Noto Serif SC', serif; margin-top: 4px;">
-              态度决定高度，努力成就未来。
-            </p>
-          </div>
-        </div>
-
       </div>
 
     </div>
   </section>
 
-  <!-- ==================== 4. CHÂN TRANG LIÊN HỆ ==================== -->
+  <!-- ==================== 4. CHÂN TRANG ==================== -->
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-pitch">
-        <h3>Cùng Lâm Minh Uyên Khởi Tạo Cơ Hội! 🌿</h3>
+        <h3>Lâm Minh Uyên • Ngôn Ngữ Trung LHU 🌿</h3>
         <p>
-          Chân thành cảm ơn Quý Thầy/Cô và Nhà tuyển dụng đã dành thời gian xem qua hồ sơ cá nhân của em. Em luôn sẵn sàng học hỏi, trau dồi và cống hiến cho sự phát triển của Quý công ty.
-        </p>
-        <p style="font-size: 13px; font-weight: 700; color: var(--primary-color); margin-top: 10px;">
-          🌸 Sinh viên chuyên ngành Ngôn ngữ Trung Quốc – Trường Đại học Lạc Hồng (LHU)
+          Sinh viên năm 4 chuyên ngành Ngôn ngữ Trung Quốc – Trường Đại học Lạc Hồng. Luôn sẵn sàng đón nhận cơ hội việc làm & thực tập đối ngoại.
         </p>
       </div>
 
       <div class="footer-contact-box">
-        <h4 style="font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 700; color: var(--text-title); margin-bottom: 8px;">
-          Thông tin liên hệ trực tiếp:
-        </h4>
-
         <div class="contact-line">
           <i data-lucide="mail"></i>
           <span><strong>Email:</strong> Minhuyenlam2701@gmail.com</span>
         </div>
-
         <div class="contact-line">
           <i data-lucide="phone"></i>
-          <span><strong>Điện thoại:</strong> 0394950167</span>
+          <span><strong>SĐT / Zalo:</strong> 0394950167</span>
         </div>
-
-        <div class="contact-line">
-          <i data-lucide="message-square"></i>
-          <span><strong>Zalo:</strong> 0394950167</span>
-        </div>
-
         <div class="contact-line">
           <i data-lucide="map-pin"></i>
           <span><strong>Địa chỉ:</strong> Khánh Bình, Tân Hiệp, TP.HCM</span>
-        </div>
-
-        <!-- DÃY ICON MẠNG XÃ HỘI PASTEL -->
-        <div class="footer-social-strip">
-          <a href="https://zalo.me/0394950167" target="_blank" title="Zalo" class="social-icon-btn">
-            <img src="./hinh_anh_ggsite/mxh_dong_bo_pastel/01_zalo_sage.png" alt="Zalo">
-          </a>
-          <a href="https://facebook.com" target="_blank" title="Facebook" class="social-icon-btn">
-            <img src="./hinh_anh_ggsite/mxh_dong_bo_pastel/02_facebook_sage.png" alt="Facebook">
-          </a>
-          <a href="https://tiktok.com" target="_blank" title="TikTok" class="social-icon-btn">
-            <img src="./hinh_anh_ggsite/mxh_dong_bo_pastel/03_tiktok_sage.png" alt="TikTok">
-          </a>
-          <a href="https://instagram.com" target="_blank" title="Instagram" class="social-icon-btn">
-            <img src="./hinh_anh_ggsite/mxh_dong_bo_pastel/04_instagram_sage.png" alt="Instagram">
-          </a>
-          <a href="mailto:Minhuyenlam2701@gmail.com" title="Gmail" class="social-icon-btn">
-            <img src="./hinh_anh_ggsite/mxh_dong_bo_pastel/05_gmail_sage.png" alt="Gmail">
-          </a>
-          <a href="javascript:void(0)" title="WeChat: lamminhuyen" class="social-icon-btn">
-            <img src="./hinh_anh_ggsite/mxh_dong_bo_pastel/06_wechat_sage.png" alt="WeChat">
-          </a>
         </div>
       </div>
     </div>
