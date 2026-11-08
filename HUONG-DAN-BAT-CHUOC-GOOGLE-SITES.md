@@ -57,8 +57,11 @@ Vào Google Sites -> Tab **Trang (Pages)** -> Tạo 5 trang:
    * Tiêu đề lớn: `Chương trình du học hè tại 中山学院 – Trung Quốc (2026)`.
    * Kéo khối **Băng chuyền hình ảnh (Image Carousel)** hoặc **Lưới 4 ảnh** gồm 3 ảnh chụp thật khuôn viên Đại học Trung Sơn + 1 ảnh trải nghiệm.
    * Dán 5 gạch đầu dòng kinh nghiệm thực tế.
-2. **Các Hoạt Động Khác**:
-   * Kéo khối **Ảnh bên trái + Văn bản bên phải** cho CLB Tiếng Trung và Thực hành biên dịch.
+2. **Kinh Nghiệm Hoạt Động & Sự Kiện Thực Tế (Cập nhật chuẩn xác theo Uyên)**:
+   * Kéo khối **Ảnh bên trái + Văn bản bên phải** (Khối 2 cột) cho 3 mục sau:
+     * **Mục 1:** `Hỗ Trợ Ban Tổ Chức & Lễ Tân (PG) – Cuộc Thi Hùng Biện Tiếng Trung Cúp Tổng Lãnh Sự Quán (2025)` (Ảnh: `hung_bien_tong_lanh_su_quan_2025.jpg` hoặc ảnh PG của Uyên).
+     * **Mục 2:** `Tham Gia Hoạt Động Doanh Nghiệp Trong Và Ngoài Nước` (Ảnh: `hoat_dong_doanh_nghiep.jpg`).
+     * **Mục 3:** `Thực Hành Biên Dịch & Xử Lý Văn Bản Song Ngữ Trung – Việt` (Ảnh: `03_kinhnghiem_1_biendich_tiengtrung.jpg`).
 
 ---
 
